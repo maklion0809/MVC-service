@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		7B487DB52595ECA10022297C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DB42595ECA10022297C /* AppDelegate.swift */; };
 		7B487DB72595ECA10022297C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DB62595ECA10022297C /* SceneDelegate.swift */; };
-		7B487DB92595ECA10022297C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DB82595ECA10022297C /* ViewController.swift */; };
+		7B487DB92595ECA10022297C /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DB82595ECA10022297C /* CommentsViewController.swift */; };
 		7B487DBC2595ECA10022297C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B487DBA2595ECA10022297C /* Main.storyboard */; };
 		7B487DBE2595ECA20022297C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B487DBD2595ECA20022297C /* Assets.xcassets */; };
 		7B487DC12595ECA20022297C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B487DBF2595ECA20022297C /* LaunchScreen.storyboard */; };
+		7B487DDA2595F1E30022297C /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DD92595F1E30022297C /* CommentsTableViewCell.swift */; };
+		7B487DDD2595F3490022297C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DDC2595F3490022297C /* Comment.swift */; };
+		7B487DE1259612DE0022297C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DE0259612DE0022297C /* NetworkService.swift */; };
+		7B487DE5259615820022297C /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DE4259615820022297C /* CommentNetworkService.swift */; };
+		7B487DE92596164B0022297C /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DE82596164B0022297C /* GetCommentResponse.swift */; };
+		7B487DEC259617020022297C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B487DEB259617020022297C /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B487DB12595ECA10022297C /* MVC-s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-s.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B487DB42595ECA10022297C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B487DB62595ECA10022297C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B487DB82595ECA10022297C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B487DB82595ECA10022297C /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		7B487DBB2595ECA10022297C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B487DBD2595ECA20022297C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B487DC02595ECA20022297C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B487DC22595ECA20022297C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B487DD92595F1E30022297C /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		7B487DDC2595F3490022297C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		7B487DE0259612DE0022297C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7B487DE4259615820022297C /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		7B487DE82596164B0022297C /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		7B487DEB259617020022297C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,109 @@
 		7B487DB32595ECA10022297C /* MVC-s */ = {
 			isa = PBXGroup;
 			children = (
-				7B487DB42595ECA10022297C /* AppDelegate.swift */,
-				7B487DB62595ECA10022297C /* SceneDelegate.swift */,
-				7B487DB82595ECA10022297C /* ViewController.swift */,
-				7B487DBA2595ECA10022297C /* Main.storyboard */,
-				7B487DBD2595ECA20022297C /* Assets.xcassets */,
-				7B487DBF2595ECA20022297C /* LaunchScreen.storyboard */,
-				7B487DC22595ECA20022297C /* Info.plist */,
+				7B487DCB2595ECAC0022297C /* Application */,
+				7B487DC92595ECA90022297C /* Comment */,
+				7B487DD22595ECF60022297C /* Supporting files */,
 			);
 			path = "MVC-s";
+			sourceTree = "<group>";
+		};
+		7B487DC92595ECA90022297C /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DE3259615670022297C /* CommentNetworkService */,
+				7B487DD12595ECD00022297C /* Conrtoller */,
+				7B487DD02595ECCD0022297C /* View */,
+				7B487DCF2595ECC60022297C /* Model */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		7B487DCB2595ECAC0022297C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DDF259612B10022297C /* NetworkService */,
+				7B487DCE2595ECBE0022297C /* Controller */,
+				7B487DCD2595ECBA0022297C /* View */,
+				7B487DCC2595ECB10022297C /* Model */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7B487DCC2595ECB10022297C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DEB259617020022297C /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B487DCD2595ECBA0022297C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DBF2595ECA20022297C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B487DCE2595ECBE0022297C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DB42595ECA10022297C /* AppDelegate.swift */,
+				7B487DB62595ECA10022297C /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7B487DCF2595ECC60022297C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DDC2595F3490022297C /* Comment.swift */,
+				7B487DE82596164B0022297C /* GetCommentResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B487DD02595ECCD0022297C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DBA2595ECA10022297C /* Main.storyboard */,
+				7B487DD92595F1E30022297C /* CommentsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B487DD12595ECD00022297C /* Conrtoller */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DB82595ECA10022297C /* CommentsViewController.swift */,
+			);
+			path = Conrtoller;
+			sourceTree = "<group>";
+		};
+		7B487DD22595ECF60022297C /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DBD2595ECA20022297C /* Assets.xcassets */,
+				7B487DC22595ECA20022297C /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		7B487DDF259612B10022297C /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DE0259612DE0022297C /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		7B487DE3259615670022297C /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				7B487DE4259615820022297C /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +243,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B487DB92595ECA10022297C /* ViewController.swift in Sources */,
+				7B487DDD2595F3490022297C /* Comment.swift in Sources */,
+				7B487DB92595ECA10022297C /* CommentsViewController.swift in Sources */,
 				7B487DB52595ECA10022297C /* AppDelegate.swift in Sources */,
 				7B487DB72595ECA10022297C /* SceneDelegate.swift in Sources */,
+				7B487DE1259612DE0022297C /* NetworkService.swift in Sources */,
+				7B487DE92596164B0022297C /* GetCommentResponse.swift in Sources */,
+				7B487DEC259617020022297C /* NetworkError.swift in Sources */,
+				7B487DDA2595F1E30022297C /* CommentsTableViewCell.swift in Sources */,
+				7B487DE5259615820022297C /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +400,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TCJQCY9299;
-				INFOPLIST_FILE = "MVC-s/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVC-s/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +419,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TCJQCY9299;
-				INFOPLIST_FILE = "MVC-s/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVC-s/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
